@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color: #ffb667;
+  --text-dark: #2d2b2c;
+  --text-light: #767268;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: #E3E7E8;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+.arrival__grid {
+    display: grid;
+    margin-top: 4rem;
+    gap: 1rem;
+  }
+  
+  .arrival__card {
+    position: relative;
+    isolation: isolate;
+    height: fit-content;
+    padding: 2rem 1rem;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+  }
+  
+  .arrival__card:hover {
+    background-color: var(--primary-color);
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrival__card span {
+    position: absolute;
+    padding: 5px 1rem;
+    top: 1rem;
+    right: 1rem;
+    padding: 5px 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+  
+  .arrival__card img {
+    width: fit-content;
+    height: 100%;
+    max-height: 160px;
+    margin-inline: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .arrival__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .arrival__card p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  .arrival__card .read__more {
+    margin-bottom: 1rem;
+    padding: calc(1rem - 4px) calc(2rem - 4px);
+    display: none;
+    background-color: transparent;
+    border: 2px solid var(--white);
+  }
+  
+  .arrival__card:hover .read__more {
+    display: block;
+    margin-inline: auto;
+  }
+
+  .for-silde{
+    display: flex;
+    align-items: center;
+  }
+
+  .for-silde-con{
+    background-image: url("img/on\ bottom.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+  }
+  .for-silde-offer{
+    font-size: 4rem;
+    color: var(--light-peach);
+    font-family: 'Allison', cursive;
+    text-transform: uppercase;
+    color: white;
+   
+  }
+  .for-silde-heading{
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .for-silde-btn{
+    font-size: 1.1rem;
+    padding: 1rem 1.7rem;
+    background-color: rgb(216, 216, 24);
+    border: none;
+    transition: transform .5s ease;
+  }
+  .for-silde-btn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .for-silde-con::before{
+    content: "";
+    background: rgba(0,0,0,.544);
+    position: absolute;
+    inset: 0;
+  }
+  .for-silde-con .contenttt{
+    z-index: 5;
+  }
+
+  .subscribe {
+    background-color: var(--primary-color);
+  }
+  
+  .subscribe__container {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .subscribe__container div {
+    text-align: center;
+  }
+  
+  .subscribe__container h2 {
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 00;
+    color: var(--text-dark);
+  }
+  
+  .subscribe__container p {
+    color: var(--white);
+  }
+
+  
+ 
+
+  /*---Media Queries---*/
+  @media screen and (max-width: 500px){
+    
+    .for-silde-heading{
+      font-size: 2.8rem;
+    }
+    .for-silde-offer{
+      font-size: 3.3rem;
+    }
+    .for-silde-btn{
+      font-size: 1rem;
+    }
+  }
