@@ -1,0 +1,19 @@
+
+  #include<iostream.h>
+    int num(int a);
+    int main()
+    {
+      int x,p;
+cout<<"enter th number"<<endl;
+cin>>x;
+p=num(x);
+cout<<p<<endl;
+return 0;
+    }
+    int num(int a)
+    {
+      if(a==0)
+      return 0;
+      else 
+      return a*num(a-1);
+    }
